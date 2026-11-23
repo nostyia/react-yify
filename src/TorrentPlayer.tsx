@@ -46,6 +46,7 @@ export default function TorrentPlayer({ magnetURI }) {
 
           // 4. En v3 se usa file.streamTo() en lugar de renderTo()
           file.streamTo(videoRef.current);
+          console.log("intentando cargar");
 
           interval = setInterval(() => {
             setProgress(Math.round(torrent.progress * 100));

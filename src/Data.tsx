@@ -5,7 +5,7 @@ const Data = () => {
   const [results, setResults] = useState([]);
   const url = "https://movies-api.accel.li/api/v2/list_movies.json";
   const sampleMagnet =
-    "https://yts.pw/torrent/download/96EEB3DF6B2CDE4628A537BC32EC897DD5867159";
+    "magnet:?xt=urn:btih:08ada5a7a6183aae1e09d831df6748d566095a10&dn=Sintel&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80";
   useEffect(() => {
     const fetchData = async () => {
       try {
